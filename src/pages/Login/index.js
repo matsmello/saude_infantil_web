@@ -1,7 +1,10 @@
 import React from 'react';
+import {Header} from './../../components'
 
 export default function Login() {
   return (
+    <>
+    {<Header />}
     <div class="flex h-screen">
     <div class="m-auto">
       <div class="w-full max-w-xs">
@@ -34,5 +37,6 @@ export default function Login() {
       </div>
       </div>
       </div>
+    </>
   );
 };
