@@ -68,18 +68,30 @@ function App(props) {
             Notícias
           </h2>
           <div class="flex flex-wrap">
-            {[1, 2, 3].map((e) => (
-              <div class="w-full md:w-1/3 px-2 mb-4">
-                <div class="bg-white rounded shadow py-2">
-                  <img src={require("./images/block.png")} class="m-auto" />
-                  <p class="text-gray-800 text-base px-6 mb-5">
-                    Monitoring and tracking my health vitals anywhere I go and
-                    on any platform I use has never been easier.
-                  </p>
-                  <p class="text-gray-500 text-xs md:text-sm px-6">John Doe</p>
-                </div>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+              <div class="bg-white rounded shadow py-2">
+                <p class="text-center text-gray-800 text-base px-6 mb-5">
+                  Diagnóstico precoce é fundamental para aumentar as chances de
+                  cura
+                </p>
               </div>
-            ))}
+            </div>
+
+            <div class="w-full md:w-1/3 px-2 mb-4">
+              <div class="bg-white rounded shadow py-2">
+                <p class="text-center text-gray-800 text-base px-6 mb-5">
+                  Saiba tudo sobre o câncer em crianças e adolescentes
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full md:w-1/3 px-2 mb-4">
+              <div class="bg-white rounded shadow py-2">
+                <p class="text-center text-gray-800 text-base px-6 mb-5">
+                  Os tipos mais comuns da doença entre os pequenos
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -98,16 +110,27 @@ function App(props) {
           <div class="flex items-center flex-wrap mb-20">
             <div class="w-full md:w-1/2">
               <h4 class="text-3xl text-gray-800 font-bold mb-3">
-                Dr. Matheus Mello
+                Dr. Laura Massotto
               </h4>
               <p class="text-gray-600 mb-8">
-                Our Smart Health Monitoring Wristwatch is able to capture you
-                vitals while you exercise. You can create different category of
-                exercises and can track your vitals on the go.
+                Depoimento: A nossa maior dificuldade, como médico, é
+                identificar o câncer infantil precocemente, já que muitos dos
+                sintomas são parecidos com as outras doenças mais comuns na
+                infância. O acompanhamento da criança deve ser feito
+                regularmente para possibilitar o seu diagnóstico precoce e
+                aumentar a sua chance de cura. Com o Cuidar+, vemos essas
+                informações chegando mais facilmente aos pacientes e suas
+                famílias e também podemos monitorar a evolução do quadro clínico
+                dessas crianças através das atualizações diárias de como a
+                criança está se sentindo feitas pelos pais no aplicativo.
               </p>
             </div>
             <div class="w-full md:w-1/2">
-              <img src={require("./images/block.png")} class="m-auto" />
+              <img
+                src={require("./images/doctor.png")}
+                style={{ width: 400 }}
+                class="m-auto"
+              />
             </div>
           </div>
         </div>
