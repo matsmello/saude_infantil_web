@@ -10,7 +10,7 @@ export default function Login() {
           <div class="w-full max-w-xs">
             <form
               class=" shadow-md rounded px-8 pt-6 pb-8 mb-4"
-              style={{ backgroundColor: "#35D461" }}
+              style={{ backgroundColor: "#35D461", padding: "20px 40px" }}
             >
               <div class="mb-4">
                 <label
@@ -41,17 +41,16 @@ export default function Login() {
               </div>
               <div class="flex items-center justify-between">
                 <button
-                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-4 rounded focus:outline-none focus:shadow-outline"
+                  class="bg-white hover:bg-white text-black font-bold py-2 px-4 mx-4 rounded focus:outline-none focus:shadow-outline"
                   type="button"
+                  style={{
+                    margin: "auto",
+                    borderRadius: 20,
+                    padding: "10px 25px",
+                  }}
                 >
                   Entrar
                 </button>
-                <a
-                  class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-                  href="#"
-                >
-                  Esqueceu a senha?
-                </a>
               </div>
             </form>
             <p class="text-center text-gray-500 text-xs">
