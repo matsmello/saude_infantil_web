@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "./../../components";
 
-export default function Login() {
+export default function Login({ history }) {
   return (
     <>
       {<Header />}
@@ -48,6 +48,7 @@ export default function Login() {
                     borderRadius: 20,
                     padding: "10px 25px",
                   }}
+                  onClick={() => history.push("/patient")}
                 >
                   Entrar
                 </button>
