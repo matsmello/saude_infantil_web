@@ -5,27 +5,67 @@ function App() {
   return (
     <>
       {<Header />}
-      <div
-        class="py-20"
-        style={{
-          background: "linear-gradient(90deg, #667eea 0%, #764ba2 100%)",
-        }}
-      >
+      <div class="py-20" style={{ display: "flex", flexDirection: "row" }}>
         <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold mb-2 text-white">Alice</h2>
-          <h3 class="text-2xl mb-8 text-gray-200">
-            Monitor your health vitals smartly anywhere you go.
-          </h3>
-          <button class="bg-red-800 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
-            Pre Order
-          </button>
+          <img
+            style={{
+              position: "absolute",
+              left: 0,
+            }}
+            class="m-auto h-40"
+            src={require("./images/side.png")}
+          />
+          <div>
+            <img
+              style={{ height: 200 }}
+              class="m-auto"
+              src={require("./images/logo_block.png")}
+            />
+            <h3 class="text-2xl mb-8 text-black-200 text-center">
+              Baixe o aplicativo
+            </h3>
+          </div>
+          <div
+            style={{
+              flexDirection: "row",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              style={{ height: 60 }}
+              class=" mr-20"
+              src={require("./images/apple.png")}
+            />
+            <img
+              style={{ height: 60 }}
+              class="h-15"
+              src={require("./images/android.png")}
+            />
+          </div>
+        </div>
+        <div class="container mx-auto px-6">
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <img
+              style={{ height: 400, zIndex: -1 }}
+              class=" mr-20"
+              src={require("./images/iphone.png")}
+            />
+          </div>
         </div>
       </div>
 
-      <section class="bg-gray-100">
+      <section
+        style={{
+          marginTop: -120,
+          borderWidth: 1,
+          zIndex: 3,
+          backgroundColor: "#FFFACA",
+        }}
+      >
         <div class="container mx-auto px-6 py-20">
           <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
-            Testimonials
+            Notícias
           </h2>
           <div class="flex flex-wrap">
             {[1, 2, 3].map((e) => (
@@ -44,15 +84,21 @@ function App() {
         </div>
       </section>
 
-      <section class="bg-gray-200">
+      <section
+        class="bg-gray-200"
+        style={{
+          borderWidth: 1,
+          backgroundColor: "white",
+        }}
+      >
         <div class="container mx-auto px-6 p-10">
           <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
-            Features
+            Depoimento do médico
           </h2>
           <div class="flex items-center flex-wrap mb-20">
             <div class="w-full md:w-1/2">
               <h4 class="text-3xl text-gray-800 font-bold mb-3">
-                Exercise Metrics
+                Dr. Matheus Mello
               </h4>
               <p class="text-gray-600 mb-8">
                 Our Smart Health Monitoring Wristwatch is able to capture you
@@ -66,7 +112,11 @@ function App() {
           </div>
         </div>
       </section>
-      <section class="container mx-auto px-6 p-10">
+      <section
+        style={{
+          backgroundColor: "#35D461",
+        }}
+      >
         <form class="w-full max-w-lg m-auto">
           <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
             Contato
@@ -153,20 +203,6 @@ function App() {
           </div>
         </form>
       </section>
-      <section style={{ backgroundColor: "#667eea" }}>
-        <div class="container mx-auto px-6 text-center py-20">
-          <h2 class="mb-6 text-4xl font-bold text-center text-white">
-            Limited in Stock
-          </h2>
-          <h3 class="my-4 text-2xl text-white">
-            Get yourself the Smart Health Monitoring Wristwatch!
-          </h3>
-          <button class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
-            Pre Order
-          </button>
-        </div>
-      </section>
-
       <footer class="bg-gray-100">
         <div class="container mx-auto px-6 pt-10 pb-6">
           <div class="flex flex-wrap">
@@ -194,7 +230,7 @@ function App() {
                     href="#"
                     class="hover:underline text-gray-600 hover:text-orange-500"
                   >
-                    Support
+                    Suporte
                   </a>
                 </li>
               </ul>
@@ -207,7 +243,7 @@ function App() {
                     href="#"
                     class="hover:underline text-gray-600 hover:text-orange-500"
                   >
-                    Terms
+                    Termos
                   </a>
                 </li>
                 <li class="mt-2">
@@ -215,65 +251,7 @@ function App() {
                     href="#"
                     class="hover:underline text-gray-600 hover:text-orange-500"
                   >
-                    Privacy
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full md:w-1/4 text-center md:text-left ">
-              <h5 class="uppercase mb-6 font-bold">Social</h5>
-              <ul class="mb-4">
-                <li class="mt-2">
-                  <a
-                    href="#"
-                    class="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Facebook
-                  </a>
-                </li>
-                <li class="mt-2">
-                  <a
-                    href="#"
-                    class="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Linkedin
-                  </a>
-                </li>
-                <li class="mt-2">
-                  <a
-                    href="#"
-                    class="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Twitter
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full md:w-1/4 text-center md:text-left ">
-              <h5 class="uppercase mb-6 font-bold">Company</h5>
-              <ul class="mb-4">
-                <li class="mt-2">
-                  <a
-                    href="#"
-                    class="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Official Blog
-                  </a>
-                </li>
-                <li class="mt-2">
-                  <a
-                    href="#"
-                    class="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li class="mt-2">
-                  <a
-                    href="#"
-                    class="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Contact
+                    Privacidade
                   </a>
                 </li>
               </ul>
