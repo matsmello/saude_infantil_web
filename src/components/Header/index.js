@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+export default function Header({ history }) {
   return (
     <nav>
       <div class="container mx-auto px-6 py-2 flex justify-between items-center">
@@ -20,19 +20,19 @@ export default function Header() {
         <div class="hidden lg:block">
           <ul class="inline-flex">
             <li>
-              <a
+              <button
+                onClick={() => history.push("/login")}
                 class="px-4 hover:text-gray-800"
                 href="#"
                 style={{
                   backgroundColor: "#35D461",
-                  height: 30,
                   padding: "10px 30px",
                   borderRadius: 20,
                   color: "white",
                 }}
               >
                 Acesso do profissional de saúde
-              </a>
+              </button>
             </li>
           </ul>
         </div>

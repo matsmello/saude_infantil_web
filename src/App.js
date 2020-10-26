@@ -1,10 +1,10 @@
 import "./assets/main.css";
 import { Header } from "./components/index";
 import React from "react";
-function App() {
+function App(props) {
   return (
     <>
-      {<Header />}
+      {<Header {...props} />}
       <div class="py-20" style={{ display: "flex", flexDirection: "row" }}>
         <div class="container mx-auto px-6">
           <img
