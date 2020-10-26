@@ -8,19 +8,22 @@ export default function Login() {
       <div class="flex h-screen">
         <div class="m-auto">
           <div class="w-full max-w-xs">
-            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form
+              class=" shadow-md rounded px-8 pt-6 pb-8 mb-4"
+              style={{ backgroundColor: "#35D461" }}
+            >
               <div class="mb-4">
                 <label
                   class="block text-gray-700 text-sm font-bold mb-2"
                   for="username"
                 >
-                  Username
+                  CPF
                 </label>
                 <input
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="username"
                   type="text"
-                  placeholder="Username"
+                  style={{ backgroundColor: "#FAF0A2" }}
                 />
               </div>
               <div class="mb-6">
@@ -28,17 +31,13 @@ export default function Login() {
                   class="block text-gray-700 text-sm font-bold mb-2"
                   for="password"
                 >
-                  Password
+                  Numero de registro
                 </label>
                 <input
-                  class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                  class="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                   id="password"
-                  type="password"
-                  placeholder="******************"
+                  style={{ backgroundColor: "#FAF0A2" }}
                 />
-                <p class="text-red-500 text-xs italic">
-                  Please choose a password.
-                </p>
               </div>
               <div class="flex items-center justify-between">
                 <button
